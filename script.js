@@ -1,4 +1,4 @@
-// add & remove "responsive" class
+// add & remove "responsive" class for burger menu
 const responsiveNav = () => {
     let x = document.getElementById("nav");
     if (x.className === "nav") {
