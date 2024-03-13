@@ -35,6 +35,11 @@ section h2 {
     text-align: center;
     padding: 50px;
 }
+@media only screen and (max-width: 1435px) {
+    h2.recent-work {
+        padding-bottom: 0px;
+    }
+}
 h3 {
     font-family: 'Avenir', sans-serif;
     font-size: 28px;
