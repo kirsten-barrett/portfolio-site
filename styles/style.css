@@ -8,17 +8,22 @@ html {
     background-color: #fff;
 }
 body {
-    font-size: 16px;
+    font-size: 17px;
     margin-top: 150px;
     font-family: 'Avenir', sans-serif;
+}
+@media only screen and (max-width: 1166px) {
+    body {
+        margin-top: 100px;
+    }
 }
 /* ========== MAIN TYPOGRAPHY ========== */
 h1 {
     font-family: 'Avenir', sans-serif;
+    font-weight: bold;
     font-size: 50px;
     text-transform: uppercase;
     color: #9dca87;
-    padding-bottom: 20px;
 }
 @media only screen and (max-width: 1166px) {
     h1 {
@@ -74,7 +79,7 @@ a.button:hover {
     }
 }
 a.black:hover {
-    background-color: #000;
+    background-color: #333;
     color: #fff;
     border: 2px solid #fff;
 }
@@ -84,6 +89,9 @@ a.full-width {
     font-size: 20px;
     margin-top: 100px;
 }
+a.active {
+    color:#9dca87;
+}
 /* ========= REUSABLE CLASS SELECTORS ======== */
 .wrapper {
     display: flex;
@@ -91,7 +99,7 @@ a.full-width {
 }
 section {
     padding-top: 40px;
-    padding-bottom: 80px;
+    padding-bottom: 40px;
 }
 .social {
     font-size: 50px;
@@ -158,15 +166,16 @@ nav a:hover {
     color: #9dca87;
 }
 .nav-button {
-    border: 1px solid #fff;
     padding: 10px 20px;
     border-radius: 30px;
     text-decoration: none;
+    background-color: #9dca87;
+    border: 1px solid #9dca87;
     color: #fff;
 }
 .nav-button:hover {
-    background-color: #9dca87;
-    border: 1px solid #9dca87;
+    background-color: #000;
+    border: 1px solid #fff;
     color: #fff;
 }
 @media only screen and (max-width: 1166px) {
@@ -179,7 +188,8 @@ nav a:hover {
         margin: 35px 10px;
     }
 }
-/* ========= MOBILE NAV ========== 
+
+/* ========= MOBILE NAV ========== */
 .icon {
     display: none;
     font-size: 30px;
@@ -201,11 +211,11 @@ nav a:hover {
     }
     .nav.responsive a.icon {
       position: absolute;
-      right: 0;
-      top: 0;
+      right: 0px;
+      top: 0px;
     }
     .nav.responsive a {
-      float: none;
+      float: right;
       display: block;
       text-align: left;
     }
@@ -230,6 +240,9 @@ section.about-me {
     max-width: 650px;
     margin: 50px;
 }
+.about-txt h1 {
+    padding-bottom: 20px;
+}
 @media only screen and (max-width: 1055px) {
     .about-txt {
         margin: 30px 0px;
@@ -237,7 +250,7 @@ section.about-me {
 }
 /* --------- Recent Work - Section --------- */
 .dark-bg {
-    background-color: #000;
+    background-color: #333;
     color:#fff;
 }
 .home-recent-work {
@@ -282,6 +295,22 @@ section.about-me {
         margin-top: 40px;
     }
 }
+@media only screen and (max-width: 1435px) {
+    .recent-work-gray {
+        background-color: gray;
+    }
+}
+/*@media only screen and (min-width: 1436px) {
+    .mb-bt {
+        display: none!important;
+    }
+}
+@media only screen and (max-width: 1435px) {
+    .mt-bt {
+        display: block;
+    }
+}
+*/
 /* --------- Contact - Section --------- */
 .contact {
     width: 80%;
@@ -296,35 +325,9 @@ section.about-me {
 .inline-icon:hover {
     color: #9dca87;
 }
-/* ========== RECENT WORK PAGE =========== 
-/* --------- Hero - Section --------- */
-.hero {
-    background-image: url("./images/background.jpg");
-    background-size: cover;
-    background-color: rgba(0,0,0,0.5);
-    background-blend-mode: darken;
-    background-position: top;
-    min-height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#contact {
+    scroll-margin-top: 50px;
 }
-.hero h1 { 
-    color: #fff;
-}
-/* ------- Recent Work Gallery - Section --------- */
-.recent-work-gallery {
-    display: grid;
-    width: 80%;
-    margin: 0 auto;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
-}
-.category {
-    background-color: gray;
-    min-height: 300px;
-}
-
 /* ========== FOOTER =========== */
 footer {
     padding: 10px 20px;

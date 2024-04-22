@@ -10,8 +10,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-        <script src="./script.js"></script>
-        <title>Recent Work - Kirsten Barrett</title>
+        <script src="./script.js" defer></script>
+        <title>Kirsten Barrett</title>
     </head>
 
     <body>
@@ -19,7 +19,7 @@
             <nav class="nav" id="nav">
                 <a href="./index.html"><img src='./images/signature.png' onmouseover="this.src='./images/signature_green.png'" onmouseout="this.src='./images/signature.png'" class="logo" alt="logo"/></a>
                     <ul class="nav-list">
-                        <li><a class="active" href="./recent-work.html">Recent Work</a></li>
+                        <li><a href="./recent-work.html">Recent Work</a></li>
                         <!--<li><a href="#">Articles</a></li>-->
                         <li><a href="#contact" class="nav-button">Contact Me</a></li>
                     </ul>
@@ -30,27 +30,31 @@
             </nav>
         </header>
 
-        <!--<div class="hero">
-                <h1>Select Your Discipline of Interest</h1>
-        </div>-->
-        
-        <section class="recent-work-gallery">
-            <a href="./code.html"><div class="category code">
-                <!--<img src="./images/cosmos.jpg" alt="code" class="category-img">-->
-                <h2>CODE</h2>
-            </div></a>
-            <a href="./ux.html"><div class="category ux">
-                <!--<img src="./images/rosco.jpg" alt="ux design and research" class="category-img">-->
-                <h2>UX DESIGN & RESEARCH</h2>
-            </div></a>
-            <a href="./graphic.html"><div class="category graphic">
-                <!--<img src="./images/portfolio-site.jpg" alt="graphic design and branding" class="category-img">-->
-                <h2>GRAPHIC DESIGN & BRANDING</h2>
-            </div></a>
-            <a href="./other.html"><div class="category other">
-                <!--<img src="./images/random-message-proj.jpg" alt="other creative work" class="category-img">-->
-                <h2>OTHER CREATIVE WORK</h2>
-            </div></a>
+        <div class="hero">
+            <h1>UX Design & Research...</h1>
+        </div>
+
+        <section class="dark-bg">
+            <div class="home-recent-work project-list">
+                
+                <div>
+                        <h2>Website Header Redesign</h2>
+                        <p class="proj-descr">At a recent position, my boss came to me with the idea to redesign his company homepage with use of a slider.  This is a prototype I designed on Figma that highlights the company's services and includes CTA opportunities.</p>
+                        <br>
+                        <img src="./images/cosmos.jpg" alt="travel website" class="proj-img">
+                        <br><br><br><br>
+                </div>
+
+                <div>
+                        <h2>Mobile App Demo</h2>
+                        <p class="proj-descr">This was a project for class that taught me a lot about user experience designing and more specifically, user testing.  This project taught me the importance of preliminary research, user testing, proper display of information, and the effects of design decisions. </p>
+                        <br>
+                        <img src="./images/portfolio-site.jpg" alt="portfolio website" class="proj-img">
+                </div>
+
+                <a href="./recent-work.html" class="button black full-width">View Additional Work</a>
+
+            </div>
         </section>
 
         <section id="contact" class="contact">

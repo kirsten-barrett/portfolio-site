@@ -3,9 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="./styles/style.css">
         <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
         <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
         <script src="./script.js"></script>
         <title>Kirsten Barrett</title>
     </head>
@@ -15,15 +18,14 @@
             <nav class="nav" id="nav">
                 <a href="./index.html"><img src='./images/signature.png' onmouseover="this.src='./images/signature_green.png'" onmouseout="this.src='./images/signature.png'" class="logo" alt="logo"/></a>
                     <ul class="nav-list">
-                        <!--<li><a href="./index.html">Home</a></li>
-                        <li><a href="./recent-work.html">Recent Work</a></li>
-                        <li><a href="mailto:kirsten.barrett25@gmail.com">kirsten.barrett25@gmail.com</a></li>-->
+                        <!--<li><a href="./recent-work.html">Recent Work</a></li>
+                        <li><a href="#">Articles</a></li>-->
                         <li><a href="#contact" class="nav-button">Contact Me</a></li>
                     </ul>
-                    <!--<a class="icon" onclick="responsiveNav()">
+                    <a class="icon" onclick="responsiveNav()">
                         <i class="ri-menu-line nav-burger"></i>
                         <i class="ri-close-line nav-close"></i>
-                    </a>-->
+                    </a>
             </nav>
         </header>
 
@@ -43,51 +45,51 @@
             <h2 class="recent-work">Recent Work</h2>
             <div class="home-recent-work">
                 <div class="grid">
+                
                 <div>
-                    <img src="./images/cosmos.jpg" alt="travel website" class="proj-img">
-                </div>
-                <div>
-                    <h3>Travel Website</h3>
-                    <p class="proj-descr">This is a custom website I developed for a client who creates travel packages. I worked closely with their designer to actualize their ideas. I used WordPress along with custom code to complete this project from beginning to end.</p>
-                    <br>
-                    <a href="https://cosmopolitours.com/" target="_blank" rel="noopener" class="button black">Live Link</a>
-                    <br><br>
+                        <img src="./images/cosmos.jpg" alt="travel website" class="proj-img">
                 </div>
                 <div>
-                    <img src="./images/rosco.jpg" alt="random message generator" class="proj-img">
+                        <h3>Travel Website</h3>
+                        <p class="proj-descr">This is a custom website I developed for a client who creates travel packages. I worked closely with their designer to actualize their ideas. I used WordPress along with custom code to complete this project from beginning to end.... I used WordPress along with custom code to complete.</p>
+                        <br>
+                        <a href="https://cosmopolitours.com/" target="_blank" rel="noopener" class="button black mb-bt">Live Link</a>
+                </div>
+
+                <div>
+                        <img src="./images/rosco.jpg" alt="random message generator" class="proj-img">
                 </div>
                 <div>
-                    <h3>Rosco's Adventure</h3>
-                    <p class="proj-descr">This is a video game developed with Unity that I completed as part of a team. My role on this team was Production Co-Lead. I created the storyboard and development workflow in addition to fixing any bugs as they arose. I also coordinated between the design and developement teams.</p>
-                    <br>
-                    <a href="https://jcv0013.itch.io/roscos-adventure" target="_blank" rel="noopener" class="button black">Play The Game</a><br>
-                    <a href="https://www.monrivergames.com/roscosadventurehome" target="_blank" rel="noopener" class="button black">More Information</a>
-                    <br><br>
+                        <h3>Rosco's Adventure</h3>
+                        <p class="proj-descr">This is a video game developed with Unity that I completed as part of a team. My role on this team was Production Co-Lead. I created the storyboard and development workflow in addition to fixing any bugs as they arose. I also coordinated between the design and developement teams.</p>
+                        <br>
+                        <a href="https://jcv0013.itch.io/roscos-adventure" target="_blank" rel="noopener" class="button black mb-bt">Play The Game</a><br>
+                        <a href="https://www.monrivergames.com/roscosadventurehome" target="_blank" rel="noopener" class="button black mb-bt">More Information</a>
+                </div>
+
+                <div>
+                        <img src="./images/portfolio-site.jpg" alt="portfolio website" class="proj-img">
                 </div>
                 <div>
-                    <img src="./images/portfolio-site.jpg" alt="portfolio website" class="proj-img">
+                        <h3>Portfolio Website</h3>
+                        <p class="proj-descr">You are currently viewing the first iteration of my portfolio website created from scratch with HTML, CSS, & JS. Although I plan to maintain a simple design, I am working on adding additional design elements, creating a dedicated recent work page, adding more user interactivity, and transferring additional projects to this site.</p>
+                        <br>
+                        <a href="https://github.com/kirsten-barrett/portfolio-site" target="_blank" rel="noopener" class="button black mb-bt">GitHub Repo</a><br>
+                </div>
+
+                <div>
+                        <img src="./images/random-message-proj.jpg" alt="random message generator" class="proj-img">
                 </div>
                 <div>
-                    <h3>Portfolio Website</h3>
-                    <p class="proj-descr">You are currently viewing the first iteration of my portfolio website created from scratch with HTML, CSS, & JS. Although I plan to maintain a simple design, I am working on adding additional design elements, creating a dedicated recent work page, adding more user interactivity, and transferring additional projects to this site.</p>
-                    <br>
-                    <a href="https://github.com/kirsten-barrett/portfolio-site" target="_blank" rel="noopener" class="button black">GitHub Repo</a><br>
-                    <a href="#" class="button black">Live Link</a>
-                    <br><br>
+                        <h3>Random Message Generator</h3>
+                        <p class="proj-descr">This project was practice using JS with HTML & CSS. The output displays today's date and generates a random message & ASCII face on each page load...This project was practice using JS with HTML & CSS. The output displays today's date and generates a random message</p>
+                        <br>
+                        <a href="https://github.com/kirsten-barrett/random-message" target="_blank" rel="noopener" class="button black mb-bt">GitHub Repo</a><br>
+                        <a href="https://kirsten-barrett.github.io/random-message/" target="_blank" rel="noopener" class="button black mb-bt">Live Link</a>
                 </div>
-                <div>
-                    <img src="./images/random-message-proj.jpg" alt="random message generator" class="proj-img">
+
                 </div>
-                <div>
-                    <h3>Random Message Generator</h3>
-                    <p class="proj-descr">This project was practice using JS with HTML & CSS. The output displays today's date and generates a random message & ASCII face on each page load.</p>
-                    <br>
-                    <a href="https://github.com/kirsten-barrett/random-message" target="_blank" rel="noopener" class="button black">GitHub Repo</a><br>
-                    <a href="https://kirsten-barrett.github.io/random-message/" target="_blank" rel="noopener" class="button black">Live Link</a>
-                    <br><br>
-                </div>
-                </div>
-                <a href="https://kirstenbarrett.myportfolio.com/" target="_blank" rel="noopener" class="button black full-width">View Additional Work</a>
+                <a href="https://kirstenbarrett.myportfolio.com/home" target="_blank" rel="noopener" class="button black full-width">View Additional Work</a>
             </div>
         </section>
 
